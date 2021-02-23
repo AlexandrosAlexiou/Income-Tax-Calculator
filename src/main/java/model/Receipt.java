@@ -5,11 +5,11 @@ import utils.ApplicationConstants;
 import java.math.BigDecimal;
 
 public class Receipt {
-	protected String kind;
-	protected String id;
-	protected String date;
-	protected double amount;
-	protected Company company;
+	private String kind;
+	private String id;
+	private String date;
+	private double amount;
+	private Company company;
 
 	public Receipt() {}
 

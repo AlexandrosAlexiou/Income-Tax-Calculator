@@ -101,7 +101,7 @@ public class TaxpayerReceiptsManagementJDialog extends JDialog {
 		deleteSelectedReceiptButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if (taxpayerReceiptsJList.getSelectedIndex()!=-1){
-					int dialogResult = JOptionPane.showConfirmDialog (null, "Diagrafh epilegmenhs apodeixhs("+taxpayerReceiptsJList.getSelectedValue().toString()+") ?", "����������� ���������", JOptionPane.YES_NO_OPTION);
+					int dialogResult = JOptionPane.showConfirmDialog (null, "Diagrafh epilegmenhs apodeixhs("+taxpayerReceiptsJList.getSelectedValue().toString()+") ?", "Epivevaiwsh Diagrafhs", JOptionPane.YES_NO_OPTION);
 					if(dialogResult == JOptionPane.YES_OPTION){
 						Database.getDatabaseInstance().getTaxpayerFromArrayList(taxpayerID).removeReceiptFromList(taxpayerReceiptsJList.getSelectedIndex());
 						try {
